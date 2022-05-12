@@ -129,12 +129,12 @@ public class CharacterController2D : NetworkBehaviour
 		}
 	}
 
-
+	
+	[ClientRpc]
 	private void Flip()
 	{
-
+		if(!isLocalPlayer) return;
 		m_FacingRight = !m_FacingRight;
-
 		transform.Rotate(0f, 180f, 0f);
 	}
 }
