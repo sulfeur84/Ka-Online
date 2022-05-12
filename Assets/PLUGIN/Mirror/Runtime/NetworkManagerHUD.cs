@@ -46,8 +46,6 @@ namespace Mirror
                 }
             }
 
-            StopButtons();
-
             GUILayout.EndArea();
         }
 
@@ -55,14 +53,7 @@ namespace Mirror
         {
             if (!NetworkClient.active)
             {
-                // Server + Client
-                if (Application.platform != RuntimePlatform.WebGLPlayer)
-                {
-                    if (GUILayout.Button("Host (Server + Client)"))
-                    {
-                        manager.StartHost();
-                    }
-                }
+                
 
                 // Client + IP
                 GUILayout.BeginHorizontal();
@@ -73,17 +64,7 @@ namespace Mirror
                 // This updates networkAddress every frame from the TextField
                 manager.networkAddress = GUILayout.TextField(manager.networkAddress);
                 GUILayout.EndHorizontal();
-
-                // Server Only
-                if (Application.platform == RuntimePlatform.WebGLPlayer)
-                {
-                    // cant be a server in webgl build
-                    GUILayout.Box("(  WebGL cannot be server  )");
-                }
-                else
-                {
-                    if (GUILayout.Button("Server Only")) manager.StartServer();
-                }
+                
             }
             else
             {
@@ -104,46 +85,19 @@ namespace Mirror
             //   Client: ...
             if (NetworkServer.active && NetworkClient.active)
             {
-                GUILayout.Label($"<b>Host</b>: running via {Transport.activeTransport}");
+                GUILayout.Label($"<b>Host</b>");
             }
             // server only
             else if (NetworkServer.active)
             {
-                GUILayout.Label($"<b>Server</b>: running via {Transport.activeTransport}");
+                GUILayout.Label($"<b>Server</b>");
             }
             // client only
             else if (NetworkClient.isConnected)
             {
-                GUILayout.Label($"<b>Client</b>: connected to {manager.networkAddress} via {Transport.activeTransport}");
+                GUILayout.Label($"<b>Client</b>");
             }
         }
-
-        void StopButtons()
-        {
-            // stop host if host mode
-            if (NetworkServer.active && NetworkClient.isConnected)
-            {
-                if (GUILayout.Button("Stop Host"))
-                {
-                    manager.StopHost();
-                }
-            }
-            // stop client if client-only
-            else if (NetworkClient.isConnected)
-            {
-                if (GUILayout.Button("Stop Client"))
-                {
-                    manager.StopClient();
-                }
-            }
-            // stop server if server-only
-            else if (NetworkServer.active)
-            {
-                if (GUILayout.Button("Stop Server"))
-                {
-                    manager.StopServer();
-                }
-            }
-        }
+        
     }
 }
