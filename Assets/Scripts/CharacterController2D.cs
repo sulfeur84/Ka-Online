@@ -11,6 +11,8 @@ public class CharacterController2D : NetworkBehaviour
 
 	public Transform m_GroundCheck;
 	public Animator animator;
+
+	public SpriteRenderer sprite;
 	//[SerializeField] private Transform m_CeilingCheck;							
 	//[SerializeField] private Collider2D m_CrouchDisableCollider;				
 
@@ -149,6 +151,7 @@ public class CharacterController2D : NetworkBehaviour
 	private void Flip()
 	{
 		m_FacingRight = !m_FacingRight;
-		transform.Rotate(0f, 180f, 0f);
+		//transform.Rotate(0f, 180f, 0f);
+		sprite.flipX = !sprite.flipX;
 	}
 }

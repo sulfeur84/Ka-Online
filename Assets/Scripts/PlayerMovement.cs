@@ -1,3 +1,4 @@
+using System;
 using Mirror;
 using UnityEngine;
 
@@ -8,7 +9,14 @@ public class PlayerMovement : NetworkBehaviour
     float horizontalMove = 0f;
     private bool jump = false;
     public Animator animator;
-    
+
+    public Camera cam;
+    private void Start()
+    {
+        if (!isLocalPlayer) return;
+        cam.gameObject.SetActive(true);
+    }
+
     private void Update()
     {
         if (!isLocalPlayer) return;
