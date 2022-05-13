@@ -15,7 +15,7 @@ public class PlayerMovement : NetworkBehaviour
         
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         
-        //animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -23,11 +23,10 @@ public class PlayerMovement : NetworkBehaviour
         }
         
     }
-
+    
     private void FixedUpdate()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
     }
-    
 }

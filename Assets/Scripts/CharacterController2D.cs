@@ -10,6 +10,7 @@ public class CharacterController2D : NetworkBehaviour
 	public LayerMask m_WhatIsGround;
 
 	public Transform m_GroundCheck;
+	public Animator animator;
 	//[SerializeField] private Transform m_CeilingCheck;							
 	//[SerializeField] private Collider2D m_CrouchDisableCollider;				
 
@@ -55,6 +56,15 @@ public class CharacterController2D : NetworkBehaviour
 				if (!wasGrounded)
 					OnLandEvent.Invoke();
 			}
+		}
+		if (m_Grounded)
+		{
+			animator.SetBool("Ground",true);
+
+		}
+		else
+		{
+			animator.SetBool("Ground",false);
 		}
 	}
 
@@ -111,13 +121,13 @@ public class CharacterController2D : NetworkBehaviour
 			if (move > 0 && !m_FacingRight)
 			{
 
-				Flip();
+				CFlip();
 			}
 
 			else if (move < 0 && m_FacingRight)
 			{
 
-				Flip();
+				CFlip();
 			}
 		}
 
@@ -129,11 +139,15 @@ public class CharacterController2D : NetworkBehaviour
 		}
 	}
 
+	[Command]
+	private void CFlip()
+	{
+		Flip();
+	}
 	
 	[ClientRpc]
 	private void Flip()
 	{
-		if(!isLocalPlayer) return;
 		m_FacingRight = !m_FacingRight;
 		transform.Rotate(0f, 180f, 0f);
 	}
