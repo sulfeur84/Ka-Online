@@ -16,8 +16,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AdditiveLevelsNetworkManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Taunt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpriteAlea.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="294FKqdamuzk5gnZj0BX6H6DDmZ" />
   <component name="ProjectViewState">
@@ -74,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652364391790</updated>
       <workItem from="1652364394157" duration="5640000" />
-      <workItem from="1652426181045" duration="10702000" />
+      <workItem from="1652426181045" duration="14121000" />
     </task>
     <servers />
   </component>
