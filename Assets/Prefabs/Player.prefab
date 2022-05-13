@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 1042464365068301366}
   - component: {fileID: 6823670615433787046}
   - component: {fileID: 8008367441323754816}
+  - component: {fileID: 7547374131649135563}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -391,6 +392,23 @@ MonoBehaviour:
   syncInterval: 0.1
   animator: {fileID: 2482448134372585646}
   text: {fileID: 1523614424457884673}
+  psd: {fileID: 0}
+  pseudal: 
+--- !u!114 &7547374131649135563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812948024503193403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3addc5ad220944ed6888319897606739, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  playerName: 
 --- !u!1 &5175258657481711008
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,7 +604,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Azertyuiop
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
