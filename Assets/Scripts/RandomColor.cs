@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
+using Mirror;
 
-namespace Mirror.Examples.AdditiveLevels
-{
     public class RandomColor : NetworkBehaviour
     {
         // Color32 packs to 4 bytes
@@ -30,7 +29,7 @@ namespace Mirror.Examples.AdditiveLevels
             // This script is on players that are respawned repeatedly
             // so once the color has been set, don't change it.
             if (color == Color.black)
-                color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+                color = Random.ColorHSV(0f, 1f, 0.7f, 0.7f, 1f, 1f);
         }
     }
-}
+
