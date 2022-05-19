@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
 
@@ -9,7 +7,7 @@ public class HostAndClientCheck : NetworkBehaviour
     [SerializeField] private BoxCollider2D Collider;
     [SerializeField] private BoxCollider2D Trigger;
     [SerializeField] private TriggerQuit TQ;
-    
+
     [SerializeField] private GameObject Boite;
 
     [SyncVar] private bool isHost = false;
