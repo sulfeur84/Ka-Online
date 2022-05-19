@@ -102,7 +102,6 @@ GameObject:
   - component: {fileID: 3050496923560037764}
   - component: {fileID: 2766085852638421187}
   - component: {fileID: 1042464365068301366}
-  - component: {fileID: 6823670615433787046}
   - component: {fileID: 8008367441323754816}
   - component: {fileID: 7547374131649135563}
   - component: {fileID: 550642320102408332}
@@ -333,7 +332,7 @@ Animator:
   m_GameObject: {fileID: 4812948024503193403}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e02dfd995faa6ac4eaa57557cfc77898, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0f76af09ae6d3de41b001ae65773dc9b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -390,23 +389,6 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6823670615433787046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4812948024503193403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a91a718a70d01b347b75cb768a6f1a92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  color:
-    serializedVersion: 2
-    rgba: 4278190080
 --- !u!114 &8008367441323754816
 MonoBehaviour:
   m_ObjectHideFlags: 0
