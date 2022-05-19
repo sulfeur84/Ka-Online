@@ -10,6 +10,8 @@ public class PlayerMovement : NetworkBehaviour
     private bool jump = false;
     public Animator animator;
 
+    public ParticleSystem ParticuleBoom;
+
     public Camera cam;
     private void Start()
     {
@@ -36,5 +38,10 @@ public class PlayerMovement : NetworkBehaviour
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
+    }
+    
+    public override void OnStopClient()
+    {
+        Instantiate(ParticuleBoom, transform.position, Quaternion.identity);
     }
 }
