@@ -152,6 +152,7 @@ public class CharacterController2D : NetworkBehaviour
 	{
 		m_FacingRight = !m_FacingRight;
 		//transform.Rotate(0f, 180f, 0f);
+		if (sprite == null) return;
 		sprite.flipX = !sprite.flipX;
 	}
 }
