@@ -25,4 +25,9 @@ public class SpriteAlea : MonoBehaviour
         
         Application.OpenURL(URL[alea]);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
