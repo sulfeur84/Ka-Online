@@ -21,7 +21,6 @@ public class SpriteAlea : MonoBehaviour
     
     public void BouttoURL()
     {
-        Debug.Log("A");
         int alea = Random.Range(0, URL.Count);
         
         Application.OpenURL(URL[alea]);
