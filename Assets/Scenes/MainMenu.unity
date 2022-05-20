@@ -199,7 +199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91973587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: -1, z: 0}
+  m_LocalPosition: {x: -4.71, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -851,6 +851,7 @@ GameObject:
   - component: {fileID: 569602341}
   - component: {fileID: 569602340}
   - component: {fileID: 569602348}
+  - component: {fileID: 569602349}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -1038,6 +1039,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt: {fileID: 275049841}
   pseudo: 
+--- !u!82 &569602349
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569602339}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f7cd1687f3e082a45a5357c2a3537cdf, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &596429594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,7 +1495,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 822a9f71fdd0b5842858ac85e0dfb8a4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a388ed24f032dc40b801b9c101562a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1417,7 +1514,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835098799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 3, z: 0}
+  m_LocalPosition: {x: 6, y: 3, z: 0}
   m_LocalScale: {x: 2.1196, y: 2.1196, z: 2.1196}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1536,6 +1633,7 @@ GameObject:
   - component: {fileID: 1138034422}
   - component: {fileID: 1138034421}
   - component: {fileID: 1138034423}
+  - component: {fileID: 1138034424}
   m_Layer: 5
   m_Name: Sprite
   m_TagString: Untagged
@@ -1625,7 +1723,84 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6f20d2712ac7a2543a666cf5073c052d, type: 3}
   - {fileID: 21300000, guid: 6acd42060a43d3544bacaefcfcaa2591, type: 3}
   - {fileID: 21300000, guid: efa42c566314822418c632a24766608d, type: 3}
+  - {fileID: 21300000, guid: 37c47bcdea4a4da499cc117c8a763529, type: 3}
+  - {fileID: 21300000, guid: 801d1d3aa57da384bbd62192f99a7a73, type: 3}
+  - {fileID: 21300000, guid: 1dde5f0d562b0a84bbdcf2260044e252, type: 3}
+  - {fileID: 21300000, guid: 388babb2436592f4fa97fefefda8b36c, type: 3}
+  - {fileID: 21300000, guid: 5cb99be9f95752f42a9ae2d77fb62b50, type: 3}
+  - {fileID: 21300000, guid: e19e65b58bb80914f8654b6ccc30ba3e, type: 3}
+  - {fileID: 21300000, guid: d8810f5f71ad2e044a010aa9e0996a50, type: 3}
+  - {fileID: 21300000, guid: c274ad21a844a334098370633181fb92, type: 3}
+  - {fileID: 21300000, guid: 4e3ed182aaec7614d8998787cb7599d8, type: 3}
+  URL:
+  - https://valou-tout-seul.itch.io/
+  - https://teamwood.itch.io/super-auto-pets
+  - https://www.youtube.com/watch?v=jMWhuRVepPw
+  - https://www.youtube.com/watch?v=dQw4w9WgXcQ
+  - https://www.smartfooding.com/fr/pates-pour-bebe/11810-pates-pour-enfants-dinosaures-bio-300g-alb-gold.html
+  - https://fr.wikipedia.org/wiki/Transparence
+  - https://www.aidedd.org/regles/classes/barde/#:~:text=Le%20barde%20est%20le%20ma%C3%AEtre,toujours%20%C3%A0%20travers%20le%20cosmos.
+  - https://www.youtube.com/watch?v=BHc4sA3k8pA
+  - https://mirror-networking.gitbook.io/docs/
+  - https://www.dailymotion.com/video/x5upg3t
+  - https://mangadex.org/chapter/dca84e21-d5c2-455a-92b0-cb89dc028061/1
   img: {fileID: 1138034421}
+--- !u!114 &1138034424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138034419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 0
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1138034421}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1138034423}
+        m_TargetAssemblyTypeName: SpriteAlea, Assembly-CSharp
+        m_MethodName: BouttoURL
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1193066667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,7 +2006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

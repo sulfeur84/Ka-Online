@@ -57,14 +57,8 @@ namespace Mirror.Discovery
                 networkDiscovery.AdvertiseServer();
             }
 
-            // Dedicated server
-            if (GUILayout.Button("Start Server"))
-            {
-                discoveredServers.Clear();
-                NetworkManager.singleton.StartServer();
-                networkDiscovery.AdvertiseServer();
-            }
-
+            // Dedicated server :)
+            
             GUILayout.EndHorizontal();
 
             // show list of found server

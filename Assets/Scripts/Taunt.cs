@@ -23,10 +23,10 @@ public class Taunt : NetworkBehaviour
     {
         if(!isLocalPlayer) return;
         
-        if(Input.GetKey(KeyCode.A)) animator.SetBool("T1",true);
+        if(Input.GetButton("Taunt1")) animator.SetBool("T1",true);
         else animator.SetBool("T1",false);
         
-        if(Input.GetKey(KeyCode.E)) animator.SetBool("T2",true);
+        if(Input.GetButton("Taunt2")) animator.SetBool("T2",true);
         else animator.SetBool("T2",false);
     }
 
